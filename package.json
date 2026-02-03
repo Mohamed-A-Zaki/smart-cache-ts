@@ -1,0 +1,33 @@
+{
+  "name": "smart-cache",
+  "version": "1.0.3",
+  "description": "A lightweight TypeScript utility for caching data with TTL support — no dependencies.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cache",
+    "ttl",
+    "typescript",
+    "storage",
+    "localstorage",
+    "utility"
+  ],
+  "author": "Mohamed Zaki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mohamed-A-Zaki/smart-cache"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
