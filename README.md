@@ -95,6 +95,39 @@ cache.set("array", [1, 2, 3]);
 cache.set("boolean", true);
 ```
 
+### Generic TypeScript Examples
+
+```typescript
+import { cache } from "smart-cache-ts";
+
+interface User {
+  name: string;
+  age: number;
+  job: string;
+}
+
+// Store typed data in cache
+cache.set<User>("test-user", {
+  name: "Mohamed-Zaki",
+  age: 26,
+  job: "Front end developer",
+});
+
+// Retrieve typed data from cache
+const userName = cache.get<User>("test-user")?.name;
+console.log(userName); // "Mohamed-Zaki"
+
+// Store and retrieve other types
+cache.set<number>("counter", 42);
+cache.set<string>("message", "Hello World");
+cache.set<boolean>("isActive", true);
+
+// Type-safe retrieval
+const counter = cache.get<number>("counter"); // number | null
+const message = cache.get<string>("message"); // string | null
+const isActive = cache.get<boolean>("isActive"); // boolean | null
+```
+
 ## TypeScript Support
 
 This package is written in TypeScript and includes type definitions out of the box.
