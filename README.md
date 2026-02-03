@@ -1,7 +1,7 @@
 # Smart Cache
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/smart-cache)
+[![npm version](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/smart-cache-ts)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 A lightweight, zero-dependency TypeScript utility for caching data with TTL (Time To Live) support. This package provides
@@ -22,19 +22,19 @@ a simple and type-safe API for storing and retrieving data in localStorage with 
 ### Using npm
 
 ```bash
-npm install smart-cache
+npm install smart-cache-ts
 ```
 
 ### Using Yarn
 
 ```bash
-yarn add smart-cache
+yarn add smart-cache-ts
 ```
 
 ### Using pnpm
 
 ```bash
-pnpm add smart-cache
+pnpm add smart-cache-ts
 ```
 
 > **Framework Agnostic**
@@ -46,7 +46,7 @@ pnpm add smart-cache
 ### Basic Cache Operations
 
 ```typescript
-import { cache } from "smart-cache";
+import { cache } from "smart-cache-ts";
 
 // Store data in cache
 cache.set("user", { name: "John", age: 30 });
@@ -63,7 +63,7 @@ const hasUser = cache.has("user");
 ### Cache with TTL (Time To Live)
 
 ```typescript
-import { cache } from "smart-cache";
+import { cache } from "smart-cache-ts";
 
 // Store data with expiration (5 seconds)
 cache.set("session", { token: "abc123" }, { ttl: 5000 });
@@ -80,7 +80,7 @@ const expiredSession = cache.get("session");
 ### Cache Management
 
 ```typescript
-import { cache } from "smart-cache";
+import { cache } from "smart-cache-ts";
 
 // Remove specific item
 cache.remove("user");

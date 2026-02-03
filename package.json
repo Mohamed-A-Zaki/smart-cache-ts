@@ -1,5 +1,5 @@
 {
-  "name": "smart-cache",
+  "name": "smart-cache-ts",
   "version": "1.0.0",
   "description": "A lightweight TypeScript utility for caching data with TTL support — no dependencies.",
   "main": "dist/index.js",
